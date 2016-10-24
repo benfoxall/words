@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server docs",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/benfoxall/words/issues"
   },
-  "homepage": "https://github.com/benfoxall/words#readme"
+  "homepage": "https://github.com/benfoxall/words#readme",
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "noisejs": "^2.1.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-buble": "^0.14.0",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-watch": "^2.5.0"
+  }
 }
